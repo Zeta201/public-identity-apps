@@ -2148,7 +2148,7 @@
             },
             "presentationDefinitions": {
                 "disabledFeatures": [],
-                "enabled": false,
+                "enabled": true,
                 "featureFlags": [],
                 "scopes": {
                     "create": [
@@ -2167,7 +2167,7 @@
             },
             "openid4vpConfig": {
                 "disabledFeatures": [],
-                "enabled": false,
+                "enabled": true,
                 "featureFlags": [],
                 "scopes": {
                     "create": [],
@@ -2277,7 +2277,7 @@
         "gravatarConfig": {
             "fallback": "404"
         },
-        "hiddenApplicationTemplates": ["verifier-application"],
+        "hiddenApplicationTemplates": [],
         "hiddenAuthenticators": [
             "BasicAuthRequestPathAuthenticator",
             "OAuthRequestPathAuthenticator"
