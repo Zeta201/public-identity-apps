@@ -91,7 +91,7 @@ export const getAppViewRoutes = (): RouteInterface[] => {
     const isMcpServersFeatureEnabled: boolean =
         window["AppUtils"]?.getConfig()?.ui?.features?.mcpServers?.enabled;
     const isOpenID4VPEnabled: boolean =
-        window["AppUtils"]?.getConfig()?.ui?.features?.openid4vpConfig?.enabled ?? false;
+        window["AppUtils"]?.getConfig()?.ui?.features?.verifiablePresentationSettings?.enabled ?? false;
 
     const isInsightsFeatureEnabled: boolean =
         window["AppUtils"]?.getConfig()?.ui?.features?.insights?.enabled === true;
@@ -228,9 +228,9 @@ export const getAppViewRoutes = (): RouteInterface[] => {
                 exact: true,
                 featureFlagKey: FeatureFlagConstants.FEATURE_FLAG_KEY_MAP.VERIFIABLE_CREDENTIALS,
                 icon: {
-                    icon: getSidePanelIcons().credentialTemplates
+                    icon: getSidePanelIcons().verifiableCredentials
                 },
-                id: "credentialTemplates",
+                id: "verifiableCredentials",
                 name: "Credential Templates",
                 order: 7,
                 path: AppConstants.getPaths().get("VC_TEMPLATES"),
